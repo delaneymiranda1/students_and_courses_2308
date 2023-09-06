@@ -33,6 +33,8 @@ RSpec.describe Course do
   end
 
   it 'meets capacity' do
+    @course.enroll(@student1)
+    @course.enroll(@student2)
     expect(@course.full?).to be true
   end
 end

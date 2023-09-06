@@ -13,6 +13,7 @@ class Course
   def enroll(student)
     if !full?
       @students << student
+      true
     else
       false
     end 
